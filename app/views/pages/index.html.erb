@@ -1,0 +1,31 @@
+<h1>Blog Pages</h1>
+
+<%#=  @pages.first.title %> 
+  <%# true %>
+ <%# grade = 97%> 
+<%#if grade > 60%>
+  <%# You Passed! %>
+<%#end%>
+<%# false %>
+<%# grade = 54%>
+<%# if grade > 60%>
+  <%# You Passed! %>
+<%#end%>
+
+<%# 4.times do |index|%>
+  <%# <p> %>
+   <%# index %> <%# fish  %> 
+   <%# </p> %>
+<%#end%>
+
+<% @pages.each do |page| %>
+  <p>
+  <%#= page.title %>
+  <%#= link_to "link text","/link/path" %>
+  <%#= link_to page.title, "/pages/#{page.id}" %>
+  <%#= link_to page.title, page_path(page) %>
+  <%= link_to page.title, page  %>
+  </p>
+<% end %>
+
+<%= link_to 'New Page', new_page_path %>
